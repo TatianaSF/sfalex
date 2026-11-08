@@ -1,0 +1,32 @@
+filename,source,intended_use,dimensions,format,bytes,optimization,integrated_into_site
+public/icons/apple-touch-icon.png,Original sfAlex bridge-mark artwork,Site favicon/app icon candidate,180x180,PNG,10507,optimized,True
+public/icons/favicon-32x32.png,Original sfAlex bridge-mark artwork,Site favicon/app icon candidate,32x32,PNG,1702,optimized,True
+public/icons/favicon.ico,Original sfAlex bridge-mark artwork,Site favicon/app icon candidate,48x48,ICO,5223,optimized,True
+public/icons/favicon.svg,Original sfAlex bridge-mark artwork,Site favicon/app icon candidate,vector,SVG,416,optimized,True
+public/icons/icon-192.png,Original sfAlex bridge-mark artwork,Site favicon/app icon candidate,192x192,PNG,11199,optimized,True
+public/icons/icon-512.png,Original sfAlex bridge-mark artwork,Site favicon/app icon candidate,512x512,PNG,21905,optimized,True
+public/images/alex-rom-portrait-640.avif,Owner-supplied original: masters/inputs/alex-rom-original-photo.png,Responsive hero portrait; original background retained,640x686,AVIF,13557,optimized,True
+public/images/alex-rom-portrait-640.webp,Owner-supplied original: masters/inputs/alex-rom-original-photo.png,Responsive hero portrait; original background retained,640x686,WEBP,22614,optimized,True
+public/images/alex-rom-portrait-960.avif,Owner-supplied original: masters/inputs/alex-rom-original-photo.png,Responsive hero portrait; original background retained,960x1030,AVIF,24409,optimized,True
+public/images/alex-rom-portrait-960.webp,Owner-supplied original: masters/inputs/alex-rom-original-photo.png,Responsive hero portrait; original background retained,960x1030,WEBP,39836,optimized,True
+public/images/golden-gate-contact-1280.avif,"Original AI-generated artwork (OpenAI image_gen, 2026-11-08)",Contact section background; responsive source set,1280x853,AVIF,38196,optimized,True
+public/images/golden-gate-contact-1280.webp,"Original AI-generated artwork (OpenAI image_gen, 2026-11-08)",Contact section background; responsive source set,1280x853,WEBP,82946,optimized,True
+public/images/golden-gate-contact-640.avif,"Original AI-generated artwork (OpenAI image_gen, 2026-11-08)",Contact section background; responsive source set,640x427,AVIF,11882,optimized,True
+public/images/golden-gate-contact-640.webp,"Original AI-generated artwork (OpenAI image_gen, 2026-11-08)",Contact section background; responsive source set,640x427,WEBP,24596,optimized,True
+public/images/golden-gate-hero-1440.avif,"Original AI-generated artwork (OpenAI image_gen, 2026-11-08)",Hero background; desktop source set,1440x960,AVIF,52233,optimized,True
+public/images/golden-gate-hero-1440.webp,"Original AI-generated artwork (OpenAI image_gen, 2026-11-08)",Hero background; desktop source set,1440x960,WEBP,114040,optimized,True
+public/images/golden-gate-hero-960.avif,"Original AI-generated artwork (OpenAI image_gen, 2026-11-08)",Hero background; desktop source set,960x640,AVIF,25212,optimized,True
+public/images/golden-gate-hero-960.webp,"Original AI-generated artwork (OpenAI image_gen, 2026-11-08)",Hero background; desktop source set,960x640,WEBP,54958,optimized,True
+public/images/og-sfalex-1200x630.png,Owner-supplied portrait + original AI-generated bridge artwork,Open Graph social preview,1200x630,PNG,565046,optimized,True
+public/ventures/b4sf-official.png,https://b4sf.com/media/brand/b4sf-logo-square.png,Venture card mark in shared 320x180 presentation box,320x180,PNG,29505,optimized,True
+public/ventures/codexsf-official.png,https://codexsf.com/codexsf-logo.png,Venture card mark in shared 320x180 presentation box,320x180,PNG,13205,optimized,True
+public/ventures/kitsf-text-fallback.svg,"Typeset project name; fallback, not an official logo",Venture card mark in shared 320x180 presentation box,vector,SVG,328,optimized,True
+public/ventures/o1sf-text-fallback.svg,"Typeset project name; fallback, not an official logo",Venture card mark in shared 320x180 presentation box,vector,SVG,326,optimized,True
+public/ventures/openaisf-text-fallback.svg,"Typeset project name; fallback, not an official logo",Venture card mark in shared 320x180 presentation box,vector,SVG,334,optimized,True
+public/ventures/tatianasf-text-fallback.svg,"Typeset project name; fallback, not an official logo",Venture card mark in shared 320x180 presentation box,vector,SVG,336,optimized,True
+masters/b4sf-official-source.png,Official source download from https://b4sf.com/media/brand/b4sf-logo-square.png,Preserved source/master,192x192,PNG,43513,master,False
+masters/bridge/golden-gate-contact-original.png,"Original AI-generated artwork (OpenAI image_gen, 2026-11-08)",Preserved source/master,1536x1024,PNG,2001398,master,False
+masters/bridge/golden-gate-hero-original.png,"Original AI-generated artwork (OpenAI image_gen, 2026-11-08)",Preserved source/master,1536x1024,PNG,2117709,master,False
+masters/codexsf-official-source.png,Official source download from https://codexsf.com/codexsf-logo.png,Preserved source/master,412x96,PNG,15346,master,False
+masters/inputs/alex-rom-original-photo.png,Owner-provided input archive,Preserved source/master,1432x1536,JPEG,80132,master,False
+masters/inputs/sfalex-approved-layout-9x16.png,Owner-provided input archive,Preserved source/master,941x1672,PNG,1946686,master,False

@@ -1,0 +1,19 @@
+# Local-only legacy production backup (preserved separately; never publish it).
+/production-backup/
+
+# Previous temporary deployment staging directory.
+/preview-deploy/
+
+# Generated preview artifact and local secrets/configuration.
+/_site/
+/dist/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.sqlite
+*.db
+
