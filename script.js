@@ -6,6 +6,7 @@
   const setOpen = (open) => {
     toggle.setAttribute('aria-expanded', String(open));
     toggle.setAttribute('aria-label', open ? 'Close navigation' : 'Open navigation');
+    nav.hidden = !open;
     nav.classList.toggle('is-open', open);
   };
 

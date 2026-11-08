@@ -13,6 +13,10 @@
 - Keep the six venture cards in this order: B4SF, O1SF, codexSF, openaiSF, kitSF, TatianaSF.
 - Keep website asset paths relative so the site works under the `/sfalex/` project path.
 - Preserve the owner-provided portrait and approved layout reference. Do not regenerate the portrait.
+- Use `design-reference/approved-2026-11/reference/approved-design-941x1672.png` as the current visual authority.
+- Do not deploy the design kit's generated portrait candidate without the owner's explicit likeness approval; the original owner portrait remains the default.
+- The six colorful venture tiles are conceptual illustrations, not verified official logos. Keep that distinction visible in the page and preserve previous official source marks.
+- Keep Current Ventures to two columns down to 320px; at very narrow widths hide only long descriptions visually, keeping them accessible to assistive technology.
 - `asset-library/masters/` preserves supplied masters and source records; `asset-library/public/` contains optimized website assets.
 - Never add `production-backup/`, credentials, private keys, personal configuration, or unrelated archives to Git.
 

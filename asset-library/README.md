@@ -1,30 +1,31 @@
 # sfAlex image asset library
 
-Prepared on 2026-11-08 from the supplied source pack for the sfAlex website.
+Prepared from the supplied source packs for the sfAlex website. The approved November 2026 kit is preserved in `../design-reference/approved-2026-11/`; its original source images are also copied byte-for-byte into `masters/approved-design-kit-2026-11/` for the asset library.
 
 ## Contents
 
-- `masters/inputs/`: unchanged owner-supplied portrait and approved 9:16 design reference.
-- `masters/bridge/`: original generated Golden Gate Bridge source images used for the derived responsive formats.
-- `masters/*-official-source.png`: source copies of the B4SF and CodexSF logos fetched from their own official domains.
-- `public/images/`: responsive portrait/bridge images and the 1200 × 630 Open Graph image.
-- `public/ventures/`: official B4SF and CodexSF marks plus text-only fallbacks for O1SF, openaiSF, kitSF, and TatianaSF.
-- `public/icons/`: custom sfAlex bridge favicon and app icon sizes.
-- `ASSET_INVENTORY.csv`: per-file source, use, dimensions, format, bytes, optimization, and integration status.
+- `masters/inputs/`: owner-supplied portrait and earlier approved 9:16 visual reference.
+- `masters/bridge/`: earlier original Golden Gate Bridge source artwork.
+- `masters/approved-design-kit-2026-11/`: unchanged original source images from the approved design kit, including its generated portrait candidate and conceptual venture tile originals.
+- `masters/*-official-source.png`: source copies of B4SF and CodexSF marks fetched from their official websites.
+- `public/images/`: optimized portrait, bridge backgrounds, and Open Graph image used or retained for the site.
+- `public/ventures/`: approved conceptual design tiles alongside preserved earlier official marks and neutral text fallbacks.
+- `public/icons/`: favicon/app marks, including the approved bridge wordmark icon.
+- `ASSET_INVENTORY.csv`: file source, intended use, dimensions, format, byte size, optimization, and current integration status.
 
-The portrait master is byte-for-byte identical to the archive input. No background-removal tool was available, so the original pale background is retained in every portrait asset. The original subject was not regenerated or retouched. Responsive versions only resize the supplied photograph; they do not upscale it beyond its original width.
+The owner-provided portrait master remains unchanged and is the portrait used on the site. Its pale original background is retained; the subject was not regenerated, retouched, or background-replaced. Responsive derivatives preserve the source photograph and do not upscale it beyond its original dimensions.
 
-The two Golden Gate Bridge backgrounds are original artwork generated specifically for this task. They are not cropped from the mockup and require no third-party photo attribution. The supplied reference mockup is retained as a design reference only.
+The November design kit's generated portrait candidate is archived for review but is not deployed because the owner has not explicitly accepted its likeness. The candidate is not used to regenerate or alter the original portrait.
 
-## Venture assets
+The approved kit includes original Golden Gate Bridge artwork and colorful venture tiles. The tile graphics are conceptual design assets, not verified official brand logos. They are presented with the venture names/descriptions and labeled as conceptual on the page. The prior B4SF/CodexSF official mark files remain preserved for possible replacement.
 
-Verified first-party image URLs:
+The earlier verified first-party image URLs were:
 
 - B4SF: https://b4sf.com/media/brand/b4sf-logo-square.png
 - CodexSF: https://codexsf.com/codexsf-logo.png
 
-The websites publish the displayed assets, but I did not find an explicit standalone logo license statement; confirm brand-use terms before public commercial use. `openaiSF` uses a directory website distinct from OpenAI; its text fallback deliberately avoids OpenAI's logo and any implied affiliation. The other three text fallbacks are neutral wordmarks, not official logo artwork.
+Those official marks are retained locally; standalone usage terms were not established in the prior audit. `openaiSF` is a directory site distinct from OpenAI. No OpenAI logo or affiliation is implied.
 
-## Integration status
+## Integration
 
-Optimized assets under `public/` are integrated into the static site. Source masters and the approved visual reference are preserved in the repository for maintenance; they are not copied into the GitHub Pages artifact. All per-file statuses are recorded in `ASSET_INVENTORY.csv`.
+Optimized approved bridge artwork, the bridge mark, original portrait derivatives, and the six conceptual venture tiles are integrated under `public/`. The GitHub Pages build publishes only the website source and `public/`; source masters and the design screenshot remain available in the repository but outside the Pages artifact.

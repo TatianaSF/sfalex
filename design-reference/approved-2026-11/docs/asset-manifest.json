@@ -1,0 +1,107 @@
+[
+  {
+    "path": "README.md",
+    "bytes": 3328,
+    "sha256": "684f7390230e4e390fd211013123fab640210f153869753a496bf6b4ec35c064"
+  },
+  {
+    "path": "originals/codexsf_gradient_app_icon.png",
+    "bytes": 1349587,
+    "sha256": "1834562c90d72b27a12f54eb49ee6fbff20415912c4c11755041b8b0ac0505d0"
+  },
+  {
+    "path": "originals/glossy_blue_b4sf_growth_logo.png",
+    "bytes": 1273211,
+    "sha256": "251f6567275f34e3ebd08247606aa1965d553ad48d1b77b7bc02d88f04474e7b"
+  },
+  {
+    "path": "originals/glossy_blue_o1sf_app_tile.png",
+    "bytes": 1189728,
+    "sha256": "5030be7d47024265166636f1f84bcf0225b34f66ecba639b00a25a359db57bc8"
+  },
+  {
+    "path": "originals/golden_gate_bridge_in_golden_light.png",
+    "bytes": 1867325,
+    "sha256": "0b38185a57d1369b6fcdfe046169b86d374ce655304626626ce0e1d0d4bcc44b"
+  },
+  {
+    "path": "originals/golden_gate_bridge_over_calm_bay.png",
+    "bytes": 1728739,
+    "sha256": "e69c0e3a3c1d49260104227e483e53cd8a7eea1f92c8b087d9ea222a441bd04f"
+  },
+  {
+    "path": "originals/kitsf_navy_wave_app_icon.png",
+    "bytes": 1243656,
+    "sha256": "39629131b1788a22dce9822b46a08e2c3041a81b49a4336602c1ba175b45f712"
+  },
+  {
+    "path": "originals/minimalist_openaisf_logo_tile.png",
+    "bytes": 1233446,
+    "sha256": "b9b6d6dac75a2e1a43d63e417341c1de42f8a2dede5984d07fc1566eafa26427"
+  },
+  {
+    "path": "originals/polished_executive_headshot_of_alex_rom.png",
+    "bytes": 2073708,
+    "sha256": "797c3d1e504f1fef8bd74979e3d026398f449609d97784f567e8a2d67d60c4b5"
+  },
+  {
+    "path": "originals/tatianasf_purple_t_app_tile.png",
+    "bytes": 1300952,
+    "sha256": "8364e112acd4be10a614f144c159fc70f77f3a2fafd79f91bb3a7f18b948a229"
+  },
+  {
+    "path": "reference/approved-design-941x1672.png",
+    "bytes": 2695074,
+    "sha256": "581f482b312c09ec28d51dc76bb32365b7f60d89e8f9974a16dc7d6f5d9ddefe"
+  },
+  {
+    "path": "web-ready/backgrounds/golden-gate-contact.webp",
+    "bytes": 56122,
+    "sha256": "5cb34d766fba67f3b9976ae617d00370faadbcd1fd1219c358ac9004abfc107e"
+  },
+  {
+    "path": "web-ready/backgrounds/golden-gate-hero.webp",
+    "bytes": 116654,
+    "sha256": "7ae1668f24f31e2d2d73178bdeb010eb2768eab49f41bcbf1e9cba8a51df2520"
+  },
+  {
+    "path": "web-ready/branding/sfalex-bridge-mark.svg",
+    "bytes": 511,
+    "sha256": "1b9b8ed59df9dedac9b221fbfad4a2ee031ac388f283851180177d2dad065148"
+  },
+  {
+    "path": "web-ready/portraits/alex-rom-headshot-reference.webp",
+    "bytes": 63542,
+    "sha256": "38c5a14830f2b83602879b7cb95782d7b7aef890a79cf34d1c6a77cbe0cf77de"
+  },
+  {
+    "path": "web-ready/ventures/venture-b4sf.webp",
+    "bytes": 8974,
+    "sha256": "3119b272fc3eff7d14171b6cbe0b33e9227205d3fe7d740b87f05a93ae3a74dc"
+  },
+  {
+    "path": "web-ready/ventures/venture-codexsf.webp",
+    "bytes": 12142,
+    "sha256": "c077b536890fe062c19dd05d16af8cfeacac7acd4cca8fd678a5afe4e38385bd"
+  },
+  {
+    "path": "web-ready/ventures/venture-kitsf.webp",
+    "bytes": 10132,
+    "sha256": "b480ba558e5fe5ccfc92df894dd23bed5fc8adb6ce7bd11f832637f773e57bdb"
+  },
+  {
+    "path": "web-ready/ventures/venture-o1sf.webp",
+    "bytes": 10502,
+    "sha256": "4fb6bca21298946a8c0c37bb775bd0f5377c4af6c2a5963585b4811c7f3d4157"
+  },
+  {
+    "path": "web-ready/ventures/venture-openaisf.webp",
+    "bytes": 8514,
+    "sha256": "55a2344b7e899d624b74d60ddd944f947c169da6c6c4cdca5b717bb2eb3337fb"
+  },
+  {
+    "path": "web-ready/ventures/venture-tatianasf.webp",
+    "bytes": 9382,
+    "sha256": "2e7025e9923ad9de372c234b6a2bfa9bf1f2d1108efb85fdc9e5122b4c56581b"
+  }
+]

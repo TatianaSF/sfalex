@@ -8,7 +8,7 @@ Redesigned, responsive portfolio for Alex Rom, implemented as dependency-free HT
 - GitHub Pages preview: https://tatianasf.github.io/sfalex/
 - Production domain: https://sfalex.com (separate legacy deployment; unchanged by this project)
 
-The Pages workflow builds a clean site artifact and applies preview-only canonical/social metadata plus `noindex`. The preview is public and should not be treated as private.
+The Pages workflow builds a clean site artifact with preview-only canonical/social metadata and a `noindex` directive. The preview is public and should not be treated as private.
 
 ## Local development
 
@@ -27,17 +27,16 @@ python scripts/build_preview.py --output _site
 ## Project contents
 
 - `index.html`, `styles.css`, `script.js`: website source.
-- `public/`: optimized portrait, Golden Gate Bridge backgrounds, venture marks, icons, and social preview image.
-- `asset-library/`: source notes, asset inventory, preserved masters, and approved visual reference.
+- `public/`: optimized portrait, approved Golden Gate Bridge backgrounds, conceptual venture design tiles, icons, and social preview image.
+- `asset-library/`: asset inventory, preserved owner portrait, earlier official marks, and source masters from the approved kit.
+- `design-reference/approved-2026-11/`: full approved design kit, screenshot, web-ready assets, and originals.
 - `docs/HOSTING_POLICY.md`: hosting boundary, preview indexing policy, and production-domain migration gate.
-- `AGENTS.md`: repository-specific implementation and deployment instructions.
+- `AGENTS.md`: repository implementation and deployment instructions.
 - `.github/workflows/pages.yml`: GitHub Actions Pages build and deployment.
 
-The responsive design includes Hero, About, Current Ventures, Experience & Highlights, and Let’s Connect. Venture cards appear in this order: B4SF, O1SF, codexSF, openaiSF, kitSF, TatianaSF.
+The site includes Hero, About, Current Ventures, Experience & Highlights, and Let’s Connect. Venture cards appear in this order: B4SF, O1SF, codexSF, openaiSF, kitSF, TatianaSF. The colorful venture images are conceptual design tiles, not verified official brand logos.
 
-## Assets
-
-The original owner-provided portrait is preserved and resized for responsive AVIF/WebP display; synthetic facial features were not generated. The optimized versions are used by the website. Golden Gate Bridge artwork and venture image sources are documented in `asset-library/README.md` and `asset-library/ASSET_INVENTORY.csv`.
+The authentic owner-provided portrait remains in use. The generated portrait candidate in the design kit is archived for review and is not deployed without explicit likeness approval. The portrait has not been regenerated or retouched.
 
 ## Hosting
 
