@@ -114,11 +114,12 @@ h1, h2, h3, p, figure { margin-top: 0; }
 .experience-item h3 { margin: 0 0 4px; color: #112642; font-size: 16px; }
 .experience-item p { margin: 0; color: #40536d; font-size: 13px; line-height: 1.4; }
 
-.contact-panel { position: relative; isolation: isolate; min-height: 0; margin-bottom: 24px; overflow: hidden; border: 1px solid #e4edf8; border-radius: 27px; background: #eaf3ff; }
-.contact-panel__backdrop, .contact-panel__veil { position: absolute; z-index: -2; inset: 0; width: 100%; height: 100%; display: block; }
+.contact-panel { position: relative; isolation: isolate; min-height: 0; margin-bottom: 24px; overflow: hidden; border: 1px solid #e4edf8; border-radius: 27px; background: transparent; }
+.contact-panel__backdrop, .contact-panel__veil { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+.contact-panel__backdrop { z-index: 0; }
 .contact-panel__backdrop img { width: 100%; height: 100%; display: block; object-fit: cover; object-position: center 60%; }
-.contact-panel__veil { z-index: -1; background: linear-gradient(90deg, rgba(251,253,255,.97) 0%, rgba(249,252,255,.93) 42%, rgba(246,250,255,.65) 66%, rgba(239,247,255,.08) 100%); }
-.contact-content { width: min(100%, 870px); padding: 27px clamp(22px, 3.5vw, 40px) 28px; }
+.contact-panel__veil { z-index: 1; background: linear-gradient(90deg, rgba(251,253,255,.97) 0%, rgba(249,252,255,.93) 42%, rgba(246,250,255,.65) 66%, rgba(239,247,255,.08) 100%); }
+.contact-content { position: relative; z-index: 2; width: min(100%, 870px); padding: 27px clamp(22px, 3.5vw, 40px) 28px; }
 .contact-lead { max-width: 650px; margin: 9px 0 13px; color: #1b2c41; font-size: clamp(15px, 1.55vw, 18px); line-height: 1.43; }
 .interest-list { display: flex; flex-wrap: wrap; gap: 8px; padding: 0; margin: 0 0 15px; list-style: none; }
 .interest-list li { min-height: 39px; display: inline-flex; align-items: center; gap: 8px; padding: 6px 13px; border: 1px solid #d9e4f2; border-radius: 999px; color: #1b3556; background: rgba(255,255,255,.94); box-shadow: 0 3px 8px rgba(23,56,95,.08); font-size: clamp(12px, 1.25vw, 15px); font-weight: 600; }
