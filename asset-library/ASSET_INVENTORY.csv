@@ -5,10 +5,10 @@ public/icons/favicon.ico,Original sfAlex bridge-mark artwork,Site favicon/app ic
 public/icons/favicon.svg,Original sfAlex bridge-mark artwork,Site favicon/app icon candidate,vector,SVG,416,optimized,False
 public/icons/icon-192.png,Original sfAlex bridge-mark artwork,Site favicon/app icon candidate,192x192,PNG,11199,optimized,False
 public/icons/icon-512.png,Original sfAlex bridge-mark artwork,Site favicon/app icon candidate,512x512,PNG,21905,optimized,False
-public/images/alex-rom-portrait-640.avif,Owner-supplied original: masters/inputs/alex-rom-original-photo.png,Responsive hero portrait; original background retained,640x686,AVIF,13557,optimized,True
-public/images/alex-rom-portrait-640.webp,Owner-supplied original: masters/inputs/alex-rom-original-photo.png,Responsive hero portrait; original background retained,640x686,WEBP,22614,optimized,True
-public/images/alex-rom-portrait-960.avif,Owner-supplied original: masters/inputs/alex-rom-original-photo.png,Responsive hero portrait; original background retained,960x1030,AVIF,24409,optimized,True
-public/images/alex-rom-portrait-960.webp,Owner-supplied original: masters/inputs/alex-rom-original-photo.png,Responsive hero portrait; original background retained,960x1030,WEBP,39836,optimized,True
+public/images/alex-rom-portrait-640.avif,Owner-supplied original: masters/inputs/alex-rom-original-photo.png,"Previous responsive portrait, retained as unused fallback (opaque background)",640x686,AVIF,13557,optimized,False
+public/images/alex-rom-portrait-640.webp,Owner-supplied original: masters/inputs/alex-rom-original-photo.png,"Previous responsive portrait, retained as unused fallback (opaque background)",640x686,WEBP,22614,optimized,False
+public/images/alex-rom-portrait-960.avif,Owner-supplied original: masters/inputs/alex-rom-original-photo.png,"Previous responsive portrait, retained as unused fallback (opaque background)",960x1030,AVIF,24409,optimized,False
+public/images/alex-rom-portrait-960.webp,Owner-supplied original: masters/inputs/alex-rom-original-photo.png,"Previous responsive portrait, retained as unused fallback (opaque background)",960x1030,WEBP,39836,optimized,False
 public/images/golden-gate-contact-1280.avif,"Original AI-generated artwork (OpenAI image_gen, 2026-11-08)",Contact section background; responsive source set,1280x853,AVIF,38196,optimized,False
 public/images/golden-gate-contact-1280.webp,"Original AI-generated artwork (OpenAI image_gen, 2026-11-08)",Contact section background; responsive source set,1280x853,WEBP,82946,optimized,False
 public/images/golden-gate-contact-640.avif,"Original AI-generated artwork (OpenAI image_gen, 2026-11-08)",Contact section background; responsive source set,640x427,AVIF,11882,optimized,False
@@ -48,3 +48,8 @@ public/ventures/venture-codexsf.webp,Approved design kit web-ready/ventures/vent
 public/ventures/venture-openaisf.webp,Approved design kit web-ready/ventures/venture-openaisf.webp,Conceptual venture design tile; not verified official logo,512x512,WEBP,8514,web-ready,True
 public/ventures/venture-kitsf.webp,Approved design kit web-ready/ventures/venture-kitsf.webp,Conceptual venture design tile; not verified official logo,512x512,WEBP,10132,web-ready,True
 public/ventures/venture-tatianasf.webp,Approved design kit web-ready/ventures/venture-tatianasf.webp,Conceptual venture design tile; not verified official logo,512x512,WEBP,9382,web-ready,True
+masters/inputs/alex-rom-owner-transparent-portrait.png,User-provided attachment 1000068346.png; copied unchanged,Selected transparent portrait master; preserve byte-for-byte,1122x1402,PNG,1889761,master,False
+public/images/alex-rom-cutout-640.avif,User-provided transparent PNG master: masters/inputs/alex-rom-owner-transparent-portrait.png,Responsive transparent hero portrait; alpha preserved; AVIF quality 82,640x800,AVIF,51271,resized with Pillow LANCZOS,True
+public/images/alex-rom-cutout-640.webp,User-provided transparent PNG master: masters/inputs/alex-rom-owner-transparent-portrait.png,Responsive transparent hero portrait; alpha preserved; WEBP quality 88,640x800,WEBP,56118,resized with Pillow LANCZOS,True
+public/images/alex-rom-cutout-960.avif,User-provided transparent PNG master: masters/inputs/alex-rom-owner-transparent-portrait.png,Responsive transparent hero portrait; alpha preserved; AVIF quality 82,960x1200,AVIF,107833,resized with Pillow LANCZOS,True
+public/images/alex-rom-cutout-960.webp,User-provided transparent PNG master: masters/inputs/alex-rom-owner-transparent-portrait.png,Responsive transparent hero portrait; alpha preserved; WEBP quality 88,960x1200,WEBP,105626,resized with Pillow LANCZOS,True

@@ -4,7 +4,7 @@ Prepared from the supplied source packs for the sfAlex website. The approved Nov
 
 ## Contents
 
-- `masters/inputs/`: owner-supplied portrait and earlier approved 9:16 visual reference.
+- `masters/inputs/`: unchanged source images, including the exact user-selected transparent Alex portrait and earlier approved 9:16 visual reference.
 - `masters/bridge/`: earlier original Golden Gate Bridge source artwork.
 - `masters/approved-design-kit-2026-11/`: unchanged original source images from the approved design kit, including its generated portrait candidate and conceptual venture tile originals.
 - `masters/*-official-source.png`: source copies of B4SF and CodexSF marks fetched from their official websites.
@@ -13,9 +13,9 @@ Prepared from the supplied source packs for the sfAlex website. The approved Nov
 - `public/icons/`: favicon/app marks, including the approved bridge wordmark icon.
 - `ASSET_INVENTORY.csv`: file source, intended use, dimensions, format, byte size, optimization, and current integration status.
 
-The owner-provided portrait master remains unchanged and is the portrait used on the site. Its pale original background is retained; the subject was not regenerated, retouched, or background-replaced. Responsive derivatives preserve the source photograph and do not upscale it beyond its original dimensions.
+The user-selected transparent portrait master `masters/inputs/alex-rom-owner-transparent-portrait.png` is preserved unchanged and is now used on the site. Responsive WebP and AVIF derivatives preserve its alpha channel and proportions; only resampling and encoding were applied.
 
-The November design kit's generated portrait candidate is archived for review but is not deployed because the owner has not explicitly accepted its likeness. The candidate is not used to regenerate or alter the original portrait.
+The generated portrait candidate in the November design kit remains archived and is not used by the site. The active portrait is the separate transparent image explicitly provided and selected by the user. No facial features were regenerated or altered.
 
 The approved kit includes original Golden Gate Bridge artwork and colorful venture tiles. The tile graphics are conceptual design assets, not verified official brand logos. They are presented with the venture names/descriptions and labeled as conceptual on the page. The prior B4SF/CodexSF official mark files remain preserved for possible replacement.
 
@@ -28,4 +28,4 @@ Those official marks are retained locally; standalone usage terms were not estab
 
 ## Integration
 
-Optimized approved bridge artwork, the bridge mark, original portrait derivatives, and the six conceptual venture tiles are integrated under `public/`. The GitHub Pages build publishes only the website source and `public/`; source masters and the design screenshot remain available in the repository but outside the Pages artifact.
+Optimized approved bridge artwork, the bridge mark, transparent portrait derivatives, and the six conceptual venture tiles are integrated under `public/`. The GitHub Pages build publishes only the website source and `public/`; source masters and the design screenshot remain available in the repository but outside the Pages artifact.

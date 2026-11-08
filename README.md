@@ -28,7 +28,7 @@ python scripts/build_preview.py --output _site
 
 - `index.html`, `styles.css`, `script.js`: website source.
 - `public/`: optimized portrait, approved Golden Gate Bridge backgrounds, conceptual venture design tiles, icons, and social preview image.
-- `asset-library/`: asset inventory, preserved owner portrait, earlier official marks, and source masters from the approved kit.
+- `asset-library/`: asset inventory, user-selected transparent portrait master, earlier official marks, and source masters from the approved kit.
 - `design-reference/approved-2026-11/`: full approved design kit, screenshot, web-ready assets, and originals.
 - `docs/HOSTING_POLICY.md`: hosting boundary, preview indexing policy, and production-domain migration gate.
 - `AGENTS.md`: repository implementation and deployment instructions.
@@ -36,7 +36,7 @@ python scripts/build_preview.py --output _site
 
 The site includes Hero, About, Current Ventures, Experience & Highlights, and Let’s Connect. Venture cards appear in this order: B4SF, O1SF, codexSF, openaiSF, kitSF, TatianaSF. The colorful venture images are conceptual design tiles, not verified official brand logos.
 
-The authentic owner-provided portrait remains in use. The generated portrait candidate in the design kit is archived for review and is not deployed without explicit likeness approval. The portrait has not been regenerated or retouched.
+The user-selected transparent portrait is in use. Its source PNG is preserved unchanged in `asset-library/masters/inputs/`; responsive AVIF/WebP derivatives preserve transparency without altering facial features.
 
 ## Hosting
 

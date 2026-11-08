@@ -63,9 +63,9 @@ h1, h2, h3, p, figure { margin-top: 0; }
 .hero__location { display: flex; align-items: center; gap: 9px; margin: 0 0 18px; color: #15243a; font-size: clamp(15px, 1.7vw, 21px); font-weight: 650; }
 .hero__location svg { width: 22px; height: 22px; flex: 0 0 22px; fill: none; stroke: var(--navy); stroke-linecap: round; stroke-linejoin: round; stroke-width: 2.5; }
 .hero__intro { max-width: 435px; margin: 0; padding: 0 0 0 17px; border-left: 4px solid var(--blue-bright); color: #121e30; font-size: clamp(17px, 1.65vw, 21px); line-height: 1.42; }
-.portrait-frame { position: relative; z-index: 1; width: min(100%, clamp(340px, 31vw, 440px)); height: auto; aspect-ratio: 960 / 1030; justify-self: end; align-self: end; margin: 0 0 10px; overflow: hidden; border-radius: 46% 46% 2% 2% / 25% 25% 2% 2%; background: rgba(248,241,239,.75); box-shadow: 0 18px 42px rgba(18,43,74,.14); transform: translateX(calc(-1 * clamp(65px, 12vw, 172px))); }
+.portrait-frame { position: relative; z-index: 1; width: min(100%, clamp(320px, 28vw, 400px)); height: auto; aspect-ratio: 1122 / 1402; justify-self: end; align-self: end; margin: 0 0 10px; overflow: visible; border-radius: 0; background: transparent; box-shadow: none; transform: translateX(calc(-1 * clamp(65px, 12vw, 172px))); }
 .portrait-frame picture, .portrait-frame img { width: 100%; height: 100%; display: block; }
-.portrait-frame img { object-fit: cover; object-position: center 18%; }
+.portrait-frame img { object-fit: contain; object-position: center; }
 .hero__actions { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; width: min(100%, 790px); margin: -2px 0 0; position: relative; z-index: 3; }
 .button { min-width: 0; min-height: 62px; display: inline-flex; align-items: center; justify-content: center; gap: 12px; padding: 12px clamp(14px, 2vw, 24px); border: 1.5px solid transparent; border-radius: 17px; box-shadow: 0 8px 18px rgba(20,56,104,.16); color: var(--navy-deep); font-size: clamp(14px, 1.55vw, 19px); font-weight: 750; text-decoration: none; transition: transform .16s ease, box-shadow .16s ease, background .16s ease; }
 .button:hover { transform: translateY(-2px); box-shadow: 0 13px 26px rgba(20,56,104,.2); }
@@ -155,8 +155,7 @@ h1, h2, h3, p, figure { margin-top: 0; }
   .hero__location { align-items: flex-start; gap: 6px; margin-bottom: 10px; font-size: clamp(12px, 1.8vw, 15px); line-height: 1.25; }
   .hero__location svg { width: 18px; height: 18px; flex-basis: 18px; }
   .hero__intro { max-width: 360px; padding-left: 10px; border-left-width: 3px; font-size: clamp(13px, 1.9vw, 16px); line-height: 1.36; }
-  .portrait-frame { width: min(100%, 112px); height: 180px; justify-self: start; margin: 0; border-radius: 38% 38% 1% 1% / 18% 18% 1% 1%; transform: none; box-shadow: 0 12px 24px rgba(18,43,74,.12); }
-  .portrait-frame img { object-position: center 12%; }
+  .portrait-frame { width: min(100%, 140px); height: auto; aspect-ratio: 1122 / 1402; justify-self: start; margin: 0; transform: none; }
   .hero__actions { width: min(100%, 330px); grid-template-columns: 1fr; gap: 8px; margin: 0 auto; }
   .button { min-height: 54px; gap: 8px; padding-inline: 12px; border-radius: 14px; font-size: clamp(12px, 1.8vw, 15px); }
   .linkedin-mark, .facebook-mark { width: 25px; height: 25px; flex-basis: 25px; font-size: 18px; }
@@ -215,7 +214,7 @@ h1, h2, h3, p, figure { margin-top: 0; }
   .hero__location { max-width: 195px; font-size: 13px; }
   .hero__intro { max-width: 205px; font-size: 14px; }
   .hero__veil { background: linear-gradient(90deg, rgba(255,255,255,.92) 0%, rgba(255,255,255,.84) 65%, rgba(255,255,255,.48) 100%), linear-gradient(0deg, rgba(3,20,42,.08), transparent 24%); }
-  .portrait-frame { width: min(42vw, 130px); height: 170px; justify-self: end; margin: -4px 90px 0 0; }
+  .portrait-frame { width: min(42vw, 130px); height: auto; aspect-ratio: 1122 / 1402; justify-self: end; margin: -4px 90px 0 0; }
   .hero__actions { grid-template-columns: 1fr; gap: 7px; margin-top: 1px; }
   .button { min-height: 47px; font-size: 14px; }
   .venture-card { min-height: 111px; gap: 5px; padding: 8px; }
