@@ -3,10 +3,9 @@
 ## Scope and infrastructure
 
 - This repository contains the redesigned sfAlex static website and its asset library.
-- GitHub is the only source-control and hosting platform for this project. GitHub Actions publishes the project preview to `https://tatianasf.github.io/sfalex/`.
-- Do not change Cloudflare DNS, nameservers, the legacy `sfalex.com` site, or any other hosting account from this repository workflow.
-- Do not configure `sfalex.com` as a custom domain here without a separately authorized migration task.
-- Keep the project Pages preview marked `noindex` until an explicitly approved domain migration.
+- GitHub is the only source-control and hosting platform for this project. GitHub Actions publishes production to `https://sfalex.com/`.
+- Do not change Cloudflare DNS, nameservers, proxy settings, the legacy source backup, or any other hosting account from this repository workflow.
+- `scripts/build_preview.py` remains available for a separate noindex preview artifact; do not use it for production publishing.
 
 ## Source and assets
 
@@ -20,10 +19,11 @@
 - `asset-library/masters/` preserves supplied masters and source records; `asset-library/public/` contains optimized website assets.
 - Never add `production-backup/`, credentials, private keys, personal configuration, or unrelated archives to Git.
 
-## Preview build and validation
+## Build and validation
 
-- Build the GitHub Pages preview with `python scripts/build_preview.py --output _site`.
-- The build rewrites preview-only canonical/social metadata and adds `noindex`; keep production-domain metadata out of the preview artifact.
-- Preview publishing is performed only by `.github/workflows/pages.yml` on the `main` branch or manual workflow dispatch.
+- Build production with `python scripts/build_production.py --output _site`.
+- The production artifact uses `https://sfalex.com/` metadata and must not contain `noindex`.
+- Production publishing is performed only by `.github/workflows/pages.yml` on the `main` branch or manual workflow dispatch.
+- Use `python scripts/build_preview.py --output _site` only when intentionally building a separate noindex preview.
 - Before publishing changes, check the generated artifact for broken local asset references and confirm the venture order and responsive navigation.
 

@@ -5,20 +5,26 @@ Redesigned, responsive portfolio for Alex Rom, implemented as dependency-free HT
 ## Preview
 
 - Repository: https://github.com/TatianaSF/sfalex
-- GitHub Pages preview: https://tatianasf.github.io/sfalex/
-- Production domain: https://sfalex.com (separate legacy deployment; unchanged by this project)
+- GitHub Pages production: https://sfalex.com/
+- The former project URL https://tatianasf.github.io/sfalex/ may redirect to the custom domain.
 
-The Pages workflow builds a clean site artifact with preview-only canonical/social metadata and a `noindex` directive. The preview is public and should not be treated as private.
+The Pages workflow builds a clean production artifact with canonical and social metadata for `https://sfalex.com/`, an indexable `robots.txt`, and a production sitemap.
 
 ## Local development
 
-Python 3 is only needed to prepare the preview artifact. To serve the source locally, run:
+Python 3 is only needed to prepare the site artifact. To serve the source locally, run:
 
 ```powershell
 python -m http.server 8000
 ```
 
-Open `http://localhost:8000/`. To build the exact Pages artifact locally:
+Open `http://localhost:8000/`. To build the production artifact locally:
+
+```powershell
+python scripts/build_production.py --output dist/production
+```
+
+To build a separate noindex preview artifact locally:
 
 ```powershell
 python scripts/build_preview.py --output _site
@@ -40,4 +46,4 @@ The user-selected transparent portrait is in use. Its source PNG is preserved un
 
 ## Hosting
 
-Pushes to `main` publish the preview using GitHub Pages Actions. The site uses the standard project URL and does not configure a custom domain. Do not change Cloudflare DNS, nameservers, or the legacy production site as part of preview work.
+Pushes to `main` publish the production site using GitHub Pages Actions. Do not change Cloudflare DNS, nameservers, or proxy settings from this repository workflow.

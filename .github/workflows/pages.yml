@@ -1,4 +1,4 @@
-name: Deploy GitHub Pages preview
+name: Deploy sfAlex production site
 
 on:
   push:
@@ -20,8 +20,8 @@ jobs:
     steps:
       - name: Check out source
         uses: actions/checkout@v4
-      - name: Build clean preview artifact
-        run: python3 scripts/build_preview.py --output _site
+      - name: Build validated production artifact
+        run: python3 scripts/build_production.py --output _site
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:

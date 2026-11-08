@@ -1,41 +1,37 @@
 # Hosting and domain policy
 
-## Current project preview
+## Production hosting
 
-- Source repository: `https://github.com/TatianaSF/sfalex`.
-- Hosting: GitHub Pages, deployed by GitHub Actions from `main`.
-- Preview URL: `https://tatianasf.github.io/sfalex/`.
-- The preview uses relative asset URLs, preview-specific canonical/Open Graph URLs, and a `noindex` directive. `robots.txt` disallows crawling on this temporary preview.
-- The repository does not configure a custom domain. The preview does not change Cloudflare DNS or nameservers.
+- Source repository: `https://github.com/TatianaSF/sfalex`, branch `main`.
+- Hosting: GitHub Pages, deployed by GitHub Actions.
+- Production URL: `https://sfalex.com/`.
+- Custom domain is configured in the repository's GitHub Pages settings; do not add a repository `CNAME` file for the Actions deployment.
+- Cloudflare is used only for DNS. Do not change DNS records, nameservers, or proxy settings from this repository workflow.
+- `scripts/build_production.py` creates the indexable production artifact. `scripts/build_preview.py` remains a separate noindex preview builder and must not be used for production.
 
-## Production domain boundary
+## Cutover state (2026-11-08)
 
-`https://sfalex.com` remains on its existing hosting source until a separate, explicitly authorized migration is completed. Do not add `sfalex.com` to this repository's Pages settings or create a `CNAME` here during preview work.
+- `sfalex.com` is verified under the `TatianaSF` GitHub account (confirmed in GitHub Settings > Pages and by GitHub accepting the Pages API update).
+- GitHub Pages API `PUT /repos/TatianaSF/sfalex/pages` returned HTTP `204`; readback showed `cname: sfalex.com`, `build_type: workflow`, source `main:/`.
+- HTTPS enforcement was `false` immediately after attaching the domain. Enable it only after GitHub reports certificate readiness.
+- Legacy `sfalexcom/sfalexcom` Pages settings remain `cname: null`, branch source `sfAlexcom`; the legacy branch no longer has a root `CNAME` file.
+- The local legacy source snapshot and archive are preserved under `production-backup/`; that directory is ignored by Git and must never be deployed. Archive SHA-256: `7d59ae3127a695241ef6ba81f4b6ec394a73b590ba85928cc6a898181c92bb98`.
+- Cloudflare records were not changed by this workflow. Existing domain verification and GitHub Pages records are owner-managed.
 
-Before transferring the domain, verify the old Pages repository and publishing source, confirm owner access and domain verification, review GitHub's current Pages custom-domain and HTTPS requirements, and prepare a rollback. The cutover must preserve the existing DNS records unless the owner separately authorizes a specific DNS change. Remove preview `noindex` only as part of the approved production cutover.
+## Recovery
 
-## Read-only transfer assessment (2026-11-08)
+- Preserve the `production-backup/` directory and the legacy repository. The backup archive contains the source snapshot; the adjacent repository clone retains history at commit `0ec671184c689dc9c62fc4252a30288482a56094`.
+- If the new production deployment has a critical defect, a repository admin may redeploy a known-good commit from `TatianaSF/sfalex` using the existing Pages workflow. Do not change DNS as part of rollback.
+- Restoring the legacy production source/domain requires an administrator of `sfalexcom/sfalexcom`; the currently authenticated `TatianaSF` account has read-only access there. Do not claim that legacy rollback is executable without that access.
 
-- The legacy source identified for production is `sfalexcom/sfalexcom`, branch `sfAlexcom`, snapshot `0ec671184c689dc9c62fc4252a30288482a56094`; the branch contains `CNAME` with `sfalex.com`.
-- The connected `TatianaSF` GitHub account has read-only access to the legacy repository (`pull: true`, `push: false`). Its Pages settings are therefore not inspectable or changeable by this session; the legacy owner or an account with repository admin access must coordinate release of the existing custom domain.
-- A read-only DNS lookup returned one apex `A` record, `185.199.108.153`, which is a GitHub Pages address. No apex `AAAA` record was returned. DNS has not been changed. GitHub's current documentation recommends verifying the domain before attaching it to a repository; for an apex, it documents `A`, `ALIAS`, or `ANAME` records and recommends four GitHub Pages `A` addresses when using `A` records.
-- A read-only lookup did not find the `_github-pages-challenge-TatianaSF.sfalex.com` TXT record. The current GitHub verification state is unknown; the challenge TXT may need to be created during an authorized transfer.
-- The new repository currently publishes by Actions at the standard project URL and has no custom domain (`cname: null`). No domain was attached during this preview task.
+## Artifact contents
 
-### Migration gates
+The production artifact contains `index.html`, `styles.css`, `script.js`, `public/`, an indexable `robots.txt`, a production `sitemap.xml`, and `.nojekyll`. Do not include `production-backup/`, asset masters outside the web asset tree, credentials, local configuration, or unrelated archives.
 
-1. Obtain owner/admin access to the legacy Pages settings and verify its current domain/publishing source in GitHub. Keep the old site active until the new build is ready.
-2. Verify `sfalex.com` under the intended personal GitHub account using GitHub's Pages domain-verification flow. That flow may require a `_github-pages-challenge-<username>.sfalex.com` TXT record; check whether an existing verification record is present before planning any DNS change.
-3. Coordinate removal/release of `sfalex.com` from the legacy repository's Pages settings. The legacy branch-published site also has a root `CNAME`; ensure it no longer claims the custom domain before completing the new attachment.
-4. With admin access on `TatianaSF/sfalex`, set `sfalex.com` under Settings → Pages. For an Actions-published site, GitHub says the custom domain is configured in Pages settings; it does not create a `CNAME` file and ignores an existing one.
-5. Preserve DNS unless the owner separately authorizes a change. Confirm current records meet GitHub's requirements, wait for validation/certificate provisioning, enforce HTTPS, and validate the apex and `www` behavior before treating the migration as complete.
-6. After live validation, remove the preview `noindex` metadata and regenerate canonical/Open Graph metadata for production. Keep the legacy commit backup available for rollback.
+The production artifact must use canonical and social URLs under `https://sfalex.com/` and must not contain a `noindex` directive. The preview builder remains independently available for explicit noindex preview builds.
 
-Current blockers are legacy Pages-setting access and unknown GitHub domain-verification status. These do not affect the live project preview.
+## References
 
-References: [Managing a custom domain](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site), [Verifying a custom domain](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/verifying-your-custom-domain-for-github-pages), and [Securing a Pages site with HTTPS](https://docs.github.com/en/pages/getting-started-with-github-pages/securing-your-github-pages-site-with-https).
-
-## Deployment workflow
-
-The workflow builds a clean `_site/` artifact containing only `index.html`, `styles.css`, `script.js`, `public/`, and preview-specific robots/sitemap files. It deploys with the official GitHub Pages Actions. Do not include `production-backup/`, source masters outside the site artifact, credentials, or other local-only material in the deployed artifact.
-
+- [Managing a custom domain](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site)
+- [Verifying a custom domain](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/verifying-your-custom-domain-for-github-pages)
+- [Securing a Pages site with HTTPS](https://docs.github.com/en/pages/getting-started-with-github-pages/securing-your-github-pages-site-with-https)
