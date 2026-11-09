@@ -1,0 +1,35 @@
+# sfAlex
+
+> sfAlex is the personal website of Alex Rom, an entrepreneur and engineer based in San Francisco.
+
+The site covers technology ventures, engineering and product building, entrepreneurship, and technology communities. Content describes projects Alex is building, growing, and supporting; inclusion does not assert legal ownership or founder status.
+
+## Pages
+
+- [Home](https://sfalex.com/): Profile and current ventures.
+- [About Alex](https://sfalex.com/about/): Professional profile and areas of focus.
+- [Projects and ventures](https://sfalex.com/ventures/): Eight-project directory.
+- [Experience and expertise](https://sfalex.com/experience/): Engineering, entrepreneurship, and community.
+
+## Machine-readable summaries
+
+- [About Alex (Markdown)](https://sfalex.com/ai/about.md)
+- [Ventures (Markdown)](https://sfalex.com/ai/ventures.md)
+- [Experience (Markdown)](https://sfalex.com/ai/experience.md)
+
+## Current projects
+
+1. [B4SF](https://b4sf.com/)
+2. [O1SF](https://o1sf.com/)
+3. [codexSF](https://codexsf.com/)
+4. [openaiSF](https://openaisf.com/)
+5. [kitSF](https://kitsf.com/)
+6. [TatianaSF](https://tatianasf.com/)
+7. [Angels of Ukraine](https://uateg.com/)
+8. [HackathonSF](https://hackathonsf.com/)
+
+## Profile
+
+- [LinkedIn](https://www.linkedin.com/in/sfalexcom)
+- Location: San Francisco, California, United States.
+- Source of truth: the linked HTML pages and the public project websites. Verify changing details at their source; do not infer credentials, employment, ownership, or affiliations not stated there.

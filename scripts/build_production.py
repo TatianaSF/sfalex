@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+import json
 import re
 import shutil
 from html.parser import HTMLParser
@@ -32,9 +33,11 @@ def build(output: Path) -> None:
     if output.exists():
         shutil.rmtree(output)
     output.mkdir(parents=True)
-    for name in ("index.html", "styles.css", "script.js", "robots.txt", "sitemap.xml"):
+    for name in ("index.html", "styles.css", "seo-pages.css", "script.js", "robots.txt", "sitemap.xml", "llms.txt"):
         shutil.copy2(ROOT / name, output / name)
     shutil.copytree(ROOT / "public", output / "public")
+    for name in ("about", "ventures", "experience", "ai"):
+        shutil.copytree(ROOT / name, output / name)
     (output / ".nojekyll").touch()
 
     html = (output / "index.html").read_text(encoding="utf-8")
@@ -60,10 +63,31 @@ def build(output: Path) -> None:
         if reference.startswith(("#", "https://", "http://", "mailto:", "tel:", "data:")):
             continue
         path = reference.split("?", 1)[0].split("#", 1)[0]
-        if path and not (output / path).is_file():
+        target = output / path if path else output
+        if path and target.is_dir():
+            target = target / "index.html"
+        if path and not target.is_file():
             missing.append(reference)
     if missing:
         raise ValueError(f"Missing local HTML references: {missing!r}")
+
+    for page in (output / "index.html", output / "about/index.html", output / "ventures/index.html", output / "experience/index.html"):
+        content = page.read_text(encoding="utf-8")
+        scripts = re.findall(r'<script type="application/ld\+json">(.*?)</script>', content, re.S)
+        if len(scripts) != 1:
+            raise ValueError(f"Expected one JSON-LD block in {page.relative_to(output)}")
+        json.loads(scripts[0])
+        parser = LocalReferences()
+        parser.feed(content)
+        for ref in parser.references:
+            if ref.startswith(("#", "https://", "http://", "mailto:", "tel:", "data:")):
+                continue
+            path = ref.split("?", 1)[0].split("#", 1)[0]
+            target = (page.parent / path).resolve() if path else page.parent
+            if path and target.is_dir():
+                target = target / "index.html"
+            if path and not target.is_file():
+                raise ValueError(f"Missing page asset {ref} referenced by {page.relative_to(output)}")
 
 
 def main() -> None:

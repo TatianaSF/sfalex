@@ -9,8 +9,8 @@
 
 ## Source and assets
 
-- Keep the six venture cards in this order: B4SF, O1SF, codexSF, openaiSF, kitSF, TatianaSF.
-- Keep website asset paths relative so the site works under the `/sfalex/` project path.
+- Keep all eight venture cards in this order: B4SF, O1SF, codexSF, openaiSF, kitSF, TatianaSF, Angels of Ukraine, HackathonSF.
+- Keep website asset paths relative so the site works in production and the `/sfalex/` noindex preview.
 - Preserve the user-selected transparent portrait at `asset-library/masters/inputs/alex-rom-owner-transparent-portrait.png` and the approved layout reference. Do not regenerate or modify the portrait.
 - Use `design-reference/approved-2026-11/reference/approved-design-941x1672.png` as the current visual authority.
 - Use the user-selected transparent portrait; do not substitute the generated design-kit candidate or prior opaque portrait unless asked.

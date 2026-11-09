@@ -16,23 +16,29 @@
   <meta property="og:description" content="Building technology ventures, leading product and engineering teams, and connecting people across the U.S. and internationally.">
   <meta property="og:url" content="https://sfalex.com/">
   <meta property="og:image" content="https://sfalex.com/public/images/og-sfalex-1200x630.png">
+  <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Alex Rom, sfAlex.com profile, and Golden Gate Bridge scenery">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Alex Rom — Entrepreneur, Engineer &amp; Startup Builder">
   <meta name="twitter:description" content="Building technology ventures, leading product and engineering teams, and connecting people across the U.S. and internationally.">
   <meta name="twitter:image" content="https://sfalex.com/public/images/og-sfalex-1200x630.png">
+  <meta name="twitter:image:alt" content="Alex Rom, sfAlex.com profile, and Golden Gate Bridge scenery">
   <link rel="preload" as="image" href="./public/images/golden-gate-hero-approved.webp" fetchpriority="high">
   <link rel="stylesheet" href="./styles.css">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Alex Rom",
-    "url": "https://sfalex.com/",
-    "jobTitle": "Entrepreneur · Engineer · Startup Builder",
-    "homeLocation": { "@type": "Place", "name": "San Francisco, California, United States" },
-    "sameAs": ["https://www.linkedin.com/in/sfalexcom"]
+    "@graph": [
+      { "@type": "Person", "@id": "https://sfalex.com/#person", "name": "Alex Rom", "url": "https://sfalex.com/", "description": "Entrepreneur and engineer building technology ventures and connecting people, ideas, and opportunities.", "jobTitle": "Entrepreneur · Engineer · Startup Builder", "homeLocation": { "@type": "Place", "name": "San Francisco, California, United States" }, "image": { "@id": "https://sfalex.com/#portrait" }, "sameAs": ["https://www.linkedin.com/in/sfalexcom"] },
+      { "@type": "ImageObject", "@id": "https://sfalex.com/#portrait", "contentUrl": "https://sfalex.com/public/images/alex-rom-cutout-960.webp", "caption": "Alex Rom in a navy suit and white shirt" },
+      { "@type": "WebSite", "@id": "https://sfalex.com/#website", "url": "https://sfalex.com/", "name": "sfAlex.com", "publisher": { "@id": "https://sfalex.com/#person" } },
+      { "@type": "ProfilePage", "@id": "https://sfalex.com/#webpage", "url": "https://sfalex.com/", "name": "Alex Rom — Entrepreneur, Engineer & Startup Builder", "isPartOf": { "@id": "https://sfalex.com/#website" }, "mainEntity": { "@id": "https://sfalex.com/#person" } },
+      { "@type": "ItemList", "@id": "https://sfalex.com/#ventures", "name": "Current Ventures", "itemListOrder": "https://schema.org/ItemListOrderAscending", "numberOfItems": 8, "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "B4SF", "url": "https://b4sf.com/" }, { "@type": "ListItem", "position": 2, "name": "O1SF", "url": "https://o1sf.com/" }, { "@type": "ListItem", "position": 3, "name": "codexSF", "url": "https://codexsf.com/" }, { "@type": "ListItem", "position": 4, "name": "openaiSF", "url": "https://openaisf.com/" }, { "@type": "ListItem", "position": 5, "name": "kitSF", "url": "https://kitsf.com/" }, { "@type": "ListItem", "position": 6, "name": "TatianaSF", "url": "https://tatianasf.com/" }, { "@type": "ListItem", "position": 7, "name": "Angels of Ukraine", "url": "https://uateg.com/" }, { "@type": "ListItem", "position": 8, "name": "HackathonSF", "url": "https://hackathonsf.com/" }
+      ] }
+    ]
   }
   </script>
   <script src="./script.js" defer></script>
@@ -49,6 +55,9 @@
         <span></span><span></span><span></span>
       </button>
       <nav id="primary-navigation" class="primary-nav" aria-label="Main navigation" hidden>
+        <a href="./about/">About Alex</a>
+        <a href="./ventures/">Projects</a>
+        <a href="./experience/">Experience</a>
         <a href="#about">About</a>
         <a href="#ventures">Ventures</a>
         <a href="#experience">Experience</a>
@@ -193,6 +202,6 @@
       </section>
     </div>
   </main>
-  <footer class="site-footer"><a href="#top">sfAlex.com</a><span>San Francisco, California</span><a href="https://www.linkedin.com/in/sfalexcom" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a></footer>
+  <footer class="site-footer"><a href="#top">sfAlex.com</a><span>San Francisco, California</span><a href="./about/">About</a><a href="./ventures/">Projects</a><a href="./experience/">Experience</a><a href="https://www.linkedin.com/in/sfalexcom" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a></footer>
 </body>
 </html>
