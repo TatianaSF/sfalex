@@ -11,7 +11,10 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 PRODUCTION_URL = "https://sfalex.com/"
-VENTURE_ORDER = ("B4SF", "O1SF", "codexSF", "openaiSF", "kitSF", "TatianaSF")
+VENTURE_ORDER = (
+    "B4SF", "O1SF", "codexSF", "openaiSF", "kitSF", "TatianaSF",
+    "Angels of Ukraine", "HackathonSF",
+)
 
 
 class LocalReferences(HTMLParser):

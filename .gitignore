@@ -8,6 +8,7 @@
 /_site/
 /dist/
 /qa-screenshots/
+/asset-library/masters/inputs/angels-of-ukraine-original.jpg
 .env
 .env.*
 !.env.example

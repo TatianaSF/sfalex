@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">HackathonSF conceptual technology illustration</title>
+  <desc id="desc">A blue code window, connected nodes and a small spark, representing collaborative building at hackathons. Conceptual artwork, not an official logo.</desc>
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ecf5ff"/><stop offset="1" stop-color="#d9eaff"/></linearGradient></defs>
+  <rect width="512" height="512" rx="72" fill="url(#bg)"/>
+  <rect x="92" y="110" width="328" height="230" rx="28" fill="#fff" stroke="#b8d6ff" stroke-width="12"/>
+  <path d="m205 190-48 36 48 36M307 190l48 36-48 36M280 176l-48 100" fill="none" stroke="#1677ed" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="146" cy="380" r="24" fill="#1677ed"/><circle cx="256" cy="410" r="24" fill="#45a2ff"/><circle cx="366" cy="380" r="24" fill="#1677ed"/>
+  <path d="m166 385 70 19m40 0 70-19" fill="none" stroke="#6caeff" stroke-width="12" stroke-linecap="round"/>
+  <path d="m390 76 10 23 23 10-23 10-10 23-10-23-23-10 23-10z" fill="#f3b941"/>
+</svg>
